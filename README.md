@@ -27,19 +27,19 @@ This application uses the following dependencies:
   ```
   bundle install
  ```
- 4. Create the database:
+ 4. Add ENVs in /.evn file:
+  ```
+  HOST_NAME=bath.com
+  ALLOWED_CORS_ORIGINS=https://example.com,https://example.org
+  ```
+ 5. Create the database:
   ```
    rails db:create
    rails db:migrate
  ```
- 5. Seed data:
+ 6. Seed data:
   ```
   rails db:seed
- ```
- 6. Add ENVs:
-  ```
-  HOST_NAME=bath.com ( its an option ENV )
-  ALLOWED_CORS_ORIGINS=https://example.com,https://example.org,http://localhost:3000/
  ```
  7. Start the server:
   ```
