@@ -1,0 +1,5 @@
+<div class='container'>
+  <%= render 'shared/notices' %>
+  <%= render partial: 'urls_table', locals: { urls: @urls } %>
+  <%= link_to 'Create another link', new_url_path, class: 'btn btn-primary' %>
+</div>

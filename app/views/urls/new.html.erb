@@ -1,0 +1,10 @@
+<div class='container'>
+  <div class='shadow p-3 m-5 bg-body  rounded text-center'>
+  <%= render 'shared/notices' %>
+    <h5> Please Add Valid URl</h5>
+    <%= form_with model: @url do |form| %>
+      <%= form.text_field :original_url, class: 'form-control mb-3' %>
+      <%= form.submit 'Create Short URL' , class:'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Original URL</th>
+      <th scope="col">Short URL</th>
+      <th scope="col">Views</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render partial: 'urls_table_rows', collection: urls, as: :url %>
+  </tbody>
+</table>
