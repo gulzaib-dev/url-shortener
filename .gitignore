@@ -25,3 +25,7 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# 🚅 add your files to ignore here.
+.env*local
+.rspec-local
